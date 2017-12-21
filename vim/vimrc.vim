@@ -24,7 +24,10 @@ set autoindent
 set cindent
 
 set hlsearch
+
+" using vunble
 if filereadable(expand("~/dotfiles/vim/vimrc.bundles"))
   source ~/dotfiles/vim/vimrc.bundles
 endif
+
 

@@ -1,0 +1,39 @@
+set nocompatible              " required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/dotfiles/vim/bundle/Vundle.vim/
+call vundle#begin()
+
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required, 
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/syntastic'
+
+" Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" Drop Syntastic settings at the end of the config file "
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "A"
+
+
+" Use specific checkers, and don't forget to install them "
+" let g:syntastic_<filetype>_checkers = ['<checker-name>']
+"
+"  For example: replace the default Python checker with flake8 and pylint "
+let g:syntastic_python_checkers = ['flake8', 'pylint']

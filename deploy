@@ -76,7 +76,8 @@ echo
 check_for_software tmux
 echo
 
-check_default_shell
+#chsh -s $(which bash)
+#check_default_shell
 
 echo
 echo -n "Would you like to backup your current dotfiles? (y/n) "

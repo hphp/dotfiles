@@ -7,7 +7,7 @@ set encoding=utf-8
 set cursorline
 " 显示行号
 set number
-set relativenumber 
+" set relativenumber 
 
 " 用空格代替制表符
 set expandtab

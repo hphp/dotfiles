@@ -20,7 +20,14 @@ If you're unsure, just read the docs, watch the video, clone this repository, an
 
 Once the repo is cloned, execute the deploy script:
 ```
+cd ~
+git clone --recursive https://github.com/XuChongBo/dotfiles.git
+cd dotfiles
 ./deploy
+pip install yapf
+pip install flake8
+vim +PluginInstall +qall
+
 ```
 
 This script guides you through the following:

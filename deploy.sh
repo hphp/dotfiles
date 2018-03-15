@@ -60,6 +60,9 @@ echo "3. We're going to check to see if your default shell is zsh"
 echo "4. We'll try to change it if it's not" 
 
 echo "Let's get started? (y/n)"
+
+apt-get update
+
 old_stty_cfg=$(stty -g)
 stty raw -echo
 answer=$( while ! head -c 1 | grep -i '[ny]' ;do true ;done )
@@ -72,6 +75,7 @@ else
 fi
 
 
+
 check_for_software zsh
 echo 
 check_for_software vim
@@ -82,7 +86,7 @@ check_for_software python
 echo
 check_for_software python-numpy
 echo
-#wget https://bootstrap.pypa.io/get-pip.py && sudo python get-pip.py
+wget https://bootstrap.pypa.io/get-pip.py && sudo python get-pip.py
 echo
 ## BELOW is GPU Environment
 pip install "mxnet==0.11.0"
@@ -106,15 +110,17 @@ echo
 pip install pyyaml
 echo
 check_for_software libhdf5-serial-dev
-pip install h5py
-pip install keras
+#pip install h5py
+#pip install keras
 pip install matplotlib
 pip install jinja2
 # for keras.
+pip install opencv-python
+pip install easydict
 
 apt-get install cuda-command-line-tools
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
-pip install tensorflow
+pip install tensorflow-gpu
 
 #chsh -s $(which bash)
 #check_default_shell

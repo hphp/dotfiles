@@ -90,6 +90,7 @@ wget https://bootstrap.pypa.io/get-pip.py && sudo python get-pip.py
 echo
 ## BELOW is GPU Environment
 pip install "mxnet==0.11.0"
+pip install --upgrade  mxnet-cu80
 echo
 check_for_software graphviz
 echo

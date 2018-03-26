@@ -122,6 +122,11 @@ pip install easydict
 apt-get install cuda-command-line-tools
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
 pip install tensorflow-gpu
+apt-get install python-numpy python-dev python-wheel python-mock python-protobuf
+apt-get install net-tools
+apt-get install libjpeg62
+pip install conda
+apt-get install python-skimage 
 
 #chsh -s $(which bash)
 #check_default_shell

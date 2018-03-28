@@ -127,7 +127,9 @@ apt-get install net-tools
 apt-get install libjpeg62
 pip install conda
 apt-get install python-skimage 
-
+apt-get install sysstat -y
+ssh-keygen -t rsa -C "hanjiatong@didichuxing.com" -b 4096
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDwDt2OeOcV2C8DM8ddgEKmV1c+b8/ss7Hmi4ItDoSXRKG13Cfsd5nc7D1WgY6RWar9ESlkr853owC7Xwo4oQOoA4jBZuX7G/WshX0YspKDq6NxO6pMHp45xWU07M9gbmMVb4W6M0D5wFgQ88Rlxn/FSgj4r+53Rib6/QifrjOi9QjVfAg13Ilap1h4/0zixSDQdDgHprYEf5Zq84GicMGdGBg6pNYkrC+9UTqbDkLMHDaaABUtjjZgcgcKvyQxVQXLTIPIW3tWROsD9dAJvEx/r3Y3JLQHVUfcuUFzfrn/EoCRlOE9pogE+qnRqyn5nfuLTRaAaey3I4vxOlkq0kVPAPpDLAwuZJFLOiG2lkMaRecOd5Xuus4KwqTVGO+EGsGj/O/mLz4+EhXxz3an5RqMb/XmeTl35hd3q9Nc9VL5XfxwezWhfFU4rYNZ8TB1MoF5WRU6B/SB3V3bi9Z7FTkuCrkLjAm0ZCueWZEQ2REV003FZYi63BDrNZzcru4fCZaWbK9wTafLhKvOwxj3Vzj70Eo3lep7BoZ6N9kKzsKVFFMG9mGjUOuWCad+oMa8rt62ZVvmtF9+HY0ZPO7GEBWQHkPbGZIjxRZrWyuLYYUm2/PrP2UwK6n4TYeL2i5fu2iD2JdBBKdvveV54HH8E+0BGZyux2aVRjW4oUPaXne0nQ== hanjiatong@didichuxing.com" >> ~/.ssh/authorized_keys
 #chsh -s $(which bash)
 #check_default_shell
 

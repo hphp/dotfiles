@@ -87,6 +87,8 @@ echo
 check_for_software python-numpy
 echo
 wget https://bootstrap.pypa.io/get-pip.py && sudo python get-pip.py
+mkdir -p ~/.pip
+cp pip.conf ~/.pip/pip.conf
 echo
 ## BELOW is GPU Environment
 pip install "mxnet==0.11.0"
@@ -127,6 +129,7 @@ apt-get install net-tools
 apt-get install libjpeg62
 pip install conda
 apt-get install python-skimage 
+pip install tensorboard==1.0.0a6
 
 #chsh -s $(which bash)
 #check_default_shell

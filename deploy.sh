@@ -137,6 +137,8 @@ echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDwDt2OeOcV2C8DM8ddgEKmV1c+b8/ss7Hmi4
 #chsh -s $(which bash)
 #check_default_shell
 
+pip install poster
+
 echo
 echo -n "Would you like to backup your current dotfiles? (y/n) "
 old_stty_cfg=$(stty -g)

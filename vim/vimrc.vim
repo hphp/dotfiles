@@ -1052,3 +1052,6 @@ autocmd BufNewFile *.h,*.cpp,*.c,*.cc,*.java,*.pl,*.php  :call <SID>InsertFormat
 autocmd BufNewFile *h :call <SID>InsertHeadFormat()
 autocmd BufNewFile *.py :call <SID>InsertPyFormat()
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+"set cursorcolumn
+"set cursorline
+set hlsearch
